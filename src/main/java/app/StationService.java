@@ -41,15 +41,7 @@ public class StationService {
     public Station getStation(int id) {
     	return stationMap.get(id);
     }
-    
-    
-    public void test() {
-    	
-		for (Station st : stationMap.values()) { 
-			System.out.println(st.toString()); 
-	    } 
-    }
-    
+        
     
     @Scheduled(fixedRate=30000)
     private void updateStationStatus() {
@@ -77,7 +69,6 @@ public class StationService {
 		}
 		
 		updateStationStatus();
-		//test(); 
     }
 	
 }
