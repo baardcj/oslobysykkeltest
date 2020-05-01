@@ -1,0 +1,20 @@
+package app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class StationController {
+	
+	@Autowired
+	StationService statService; 
+	
+	@GetMapping("/")
+	public String stations(Model model) {
+		model.addAttribute("station", statService.stationMap().values());
+		return "index";
+	}
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Display Information of available bicycles at OsloBysykkel stations</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th> Station Name </th>
+            <th> Bikes available </th>
+            <th> Author </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${station.empty}">
+            <td colspan="2"> No Stations Available </td>
+        </tr>
+        <tr th:each="station : ${station}">
+            <td><span th:text="${station.name}"> Name </span></td>
+            <td><span th:text="${station.num_bikes_available}"> Bikes available </span></td>
+            <td><span th:text="${station.num_docks_available}"> Docks available </span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
