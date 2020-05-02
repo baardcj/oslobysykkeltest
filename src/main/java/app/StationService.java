@@ -40,7 +40,7 @@ public class StationService {
     }
     
     
-    @Scheduled(fixedRate=60000)
+    @Scheduled(fixedRate=10000)
     private void updateStationStatus() {
     	
     	if(stationMap.size() != 0){
