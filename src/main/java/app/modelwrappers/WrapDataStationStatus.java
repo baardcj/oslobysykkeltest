@@ -5,6 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.NoArgsConstructor;
 import lombok.Data;
 
+/*
+ * Wrapper class that contains the other wrapper class WrapStationStatus. 
+ *  Used by restTemplate to query API. 
+ */
 @Data
 @NoArgsConstructor 
 public class WrapDataStationStatus{

@@ -33,13 +33,19 @@ public class StationService {
 	private final Map<Integer, Station> stationMap = new HashMap<Integer, Station>();
 	private final RestTemplate restTemplate = new RestTemplate();
 
-
+	
+	/*
+	 *  stationMap keeps data of each station which are obtained from OsloBysykkel 
+	 */
     @Bean
     public Map<Integer, Station> stationMap(){
     	return stationMap;
     }
     
     
+    /*
+     * updates available bikes and docks on OsloBysykkelstations
+     */
     @Scheduled(fixedRate=10000)
     private void updateStationStatus() {
     	
@@ -72,6 +78,9 @@ public class StationService {
     }
 	
     
+    /*
+     * Initiation method that runs one queries OsloBysykkel to get info on all stations 
+     */
     @PostConstruct
     public void init() {
     	
