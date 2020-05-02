@@ -3,6 +3,9 @@ package app.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/*
+ * Model of the status of a station
+ */
 @Data
 @NoArgsConstructor
 public class StationStatus{

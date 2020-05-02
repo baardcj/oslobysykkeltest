@@ -7,6 +7,10 @@ import app.model.Station;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/*
+ * Wrapper class that contains list of Stations. 
+ * Used by restTemplate to query API. 
+ */
 @NoArgsConstructor
 @Data
 public class WrapStationInfo {
