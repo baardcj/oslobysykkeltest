@@ -1,0 +1,24 @@
+#stations {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin: auto;
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+#stations td, #stations th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#stations tr:nth-child(even){background-color: #f2f2f2;}
+
+#stations tr:hover {background-color: #ddd;}
+
+#stations th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3799c4;
+  color: white;
+}
