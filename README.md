@@ -14,6 +14,6 @@ The list of stations are displayed at `http://localhost:8080/`
 
 **Notes:** 
 * The app uses rest templates for api calls, and thymleaf for presentation
-* Simple logging features are added
-* The app queries oslo bysykkel API every 15 second
+* Simple logging features are added and sent to console
+* The app query oslo bysykkel API every 15 second
 * Errors are loged to console 
