@@ -16,4 +16,5 @@ public class WrapDataStationInfo {
 	@JsonProperty("data")
 	private WrapStationInfo data; 
 	
+	
 }

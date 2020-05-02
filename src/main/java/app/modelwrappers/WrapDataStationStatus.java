@@ -6,8 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Data;
 
 @Data
-@NoArgsConstructor
-public class WrapDataStationStatus {
+@NoArgsConstructor 
+public class WrapDataStationStatus{
 	
 	private int last_updated;
 	
