@@ -9,7 +9,7 @@ If you use Maven, you can run the application by using ./mvnw spring-boot:run. A
 
 `java -jar target/gs-serving-web-content-0.1.0.jar`
 
-
+The list of stations are displayed at `http://localhost:8080/`
 
 
 **todo:** 
